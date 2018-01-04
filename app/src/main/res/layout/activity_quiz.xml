@@ -10,63 +10,80 @@
     <TextView
         android:id="@+id/q1_textView"
         style="@style/QuestionText"
-        android:text="Question 1"/>
+        android:text="Question 1" />
 
-    <LinearLayout
-        android:id="@+id/q1_a_linearLayout"
+
+    <RadioButton
+        android:id="@+id/q1_a_radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Answer 1a" />
 
-        <RadioButton
-            android:id="@+id/q1_a_radioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="RadioButton" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="answer 1 a"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/q1_b_linearLayout"
+    <RadioButton
+        android:id="@+id/q1_b_radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Answeer 1 b" />
 
-        <RadioButton
-            android:id="@+id/q1_b_radioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="RadioButton" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="answer 1 b"/>
-    </LinearLayout>
+    <RadioButton
+        android:id="@+id/q1_c_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer 1c" />
 
     <TextView
         android:id="@+id/q2_textView"
         style="@style/QuestionText"
-        android:text="Question 2"/>
+        android:text="Question 2" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+
+    <RadioButton
+        android:id="@+id/q2_a_radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="answer 2 a" />
 
-        <RadioButton
-            android:id="@+id/q2_radioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="RadioButton" />
-    </LinearLayout>
+    <RadioButton
+        android:id="@+id/q2_b_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="answer 2 b" />
+
+    <RadioButton
+        android:id="@+id/q2_c_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="answer 2 c" />
+
+    <TextView
+        android:id="@+id/q3_textView"
+        style="@style/QuestionText"
+        android:text="Question 3" />
+
+
+    <RadioButton
+        android:id="@+id/q3_a_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="answer 3 a" />
+    <RadioButton
+        android:id="@+id/q3_b_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="answer 3 b" />
+    <RadioButton
+        android:id="@+id/q3_c_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="answer 3 c" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Submit Answers"/>
 
 </android.support.v7.widget.LinearLayoutCompat>
