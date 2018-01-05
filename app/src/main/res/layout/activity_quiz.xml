@@ -8,82 +8,102 @@
     tools:context="com.kewlala.udacityquiz.Quiz">
 
     <TextView
+        style="@style/QuestionText"
+        android:text="Choose the correct meaning of each character." />
+
+    <TextView
         android:id="@+id/q1_textView"
         style="@style/QuestionText"
-        android:text="Question 1" />
+        android:text="火" />
 
 
-    <RadioButton
-        android:id="@+id/q1_a_radioButton"
+    <RadioGroup
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Answer 1a" />
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/q1_a_radioButton"
+            style="@style/AnswerRadio"
+            android:onClick="setAnswer1a"
+            android:text="Fire" />
 
 
-    <RadioButton
-        android:id="@+id/q1_b_radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Answeer 1 b" />
+        <RadioButton
+            android:id="@+id/q1_b_radioButton"
+            style="@style/AnswerRadio"
+            android:onClick="setAnswer1b"
+            android:text="Water" />
 
 
-    <RadioButton
-        android:id="@+id/q1_c_radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Answer 1c" />
+        <RadioButton
+            android:id="@+id/q1_c_radioButton"
+            style="@style/AnswerRadio"
+            android:onClick="setAnswer1c"
+            android:text="Air" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/q2_textView"
         style="@style/QuestionText"
-        android:text="Question 2" />
+        android:text="水" />
 
 
-    <RadioButton
-        android:id="@+id/q2_a_radioButton"
+    <RadioGroup
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="answer 2 a" />
+        android:layout_height="wrap_content">
 
-    <RadioButton
-        android:id="@+id/q2_b_radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="answer 2 b" />
+        <RadioButton
+            android:id="@+id/q2_a_radioButton"
+            style="@style/AnswerRadio"
+            android:onClick="setAnswer2a"
+            android:text="Fire" />
 
-    <RadioButton
-        android:id="@+id/q2_c_radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="answer 2 c" />
+        <RadioButton
+            android:id="@+id/q2_b_radioButton"
+            style="@style/AnswerRadio"
+            android:onClick="setAnswer2b"
+            android:text="Water" />
+
+        <RadioButton
+            android:id="@+id/q2_c_radioButton"
+            style="@style/AnswerRadio"
+            android:onClick="setAnswer2c"
+            android:text="Air" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/q3_textView"
         style="@style/QuestionText"
-        android:text="Question 3" />
+        android:text="氣" />
 
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <RadioButton
-        android:id="@+id/q3_a_radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="answer 3 a" />
-    <RadioButton
-        android:id="@+id/q3_b_radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="answer 3 b" />
-    <RadioButton
-        android:id="@+id/q3_c_radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="answer 3 c" />
+        <RadioButton
+            android:id="@+id/q3_a_radioButton"
+            style="@style/AnswerRadio"
+            android:onClick="setAnswer3a"
+            android:text="Fire" />
 
+        <RadioButton
+            android:id="@+id/q3_b_radioButton"
+            style="@style/AnswerRadio"
+            android:onClick="setAnswer3b"
+            android:text="Water" />
+
+        <RadioButton
+            android:id="@+id/q3_c_radioButton"
+            style="@style/AnswerRadio"
+            android:onClick="setAnswer3c"
+            android:text="Air" />
+    </RadioGroup>
 
     <android.support.v7.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Submit Answers"/>
+        android:onClick="submitAnsers"
+        android:text="Submit Answers" />
 
 </android.support.v7.widget.LinearLayoutCompat>
